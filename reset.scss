@@ -1,0 +1,80 @@
+@import "./dropdownMenu";
+@import "./mediaDropDown";
+@import "./carousel";
+@import "./main";
+@import "./mainMedia";
+
+
+*  {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif ;
+list-style-type: none;
+text-decoration: none;
+scroll-behavior: smooth;
+user-select: none;
+-webkit-tap-highlight-color: transparent;
+
+
+}
+body {
+ background-color: white;
+}
+button,a {
+    cursor: pointer;
+}
+a {
+    color: inherit;
+    cursor: pointer;
+}
+.hover:hover {
+    border-radius: 30px;
+    background: $colorHover;
+    cursor: pointer;
+}
+
+
+// js klase
+.backbtnItems {
+    font-size: $tabfont;
+    font-weight: 800;
+    cursor: pointer;
+    padding: 5px 150px 0 0;
+}
+
+.show {
+    display: block;
+}
+.showw {
+    visibility: visible;
+}
+
+// media font
+@media (min-width: 1000px) {
+   main {
+    margin: 2% 10%;
+   }
+   
+
+} 
+
+
+@media (max-width: 900px) {
+    ul,li,p,a,span {
+        font-size: $tabfont;
+    }
+    main {
+        margin: 2% 0%;
+       }
+       
+    
+    } 
+
+@media (max-width: 560px) {
+    ul,li,p,a,span {
+        font-size: $mobfont;
+      
+    }
+   
+}

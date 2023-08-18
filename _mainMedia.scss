@@ -1,0 +1,40 @@
+@media (max-width:1200px) {
+    .under-carousel-cont,
+    .logo-cont,
+    .recommend-cont,
+    .special-prices-cont,
+    .popular-categories-section,
+    .fun-cont
+     { 
+        margin-inline: 2rem;
+    }
+    .card-section {
+        overflow-x: scroll;
+        article {
+            button {
+                display: block;
+            }
+        }
+    }
+    .fun-none {
+        display: none;
+    }
+    .fun-cont{
+        flex-direction: column;
+    }
+
+    .fun_right-div-cont {
+        
+        grid-template-columns: repeat(2,1fr) !important;
+    }
+
+}
+
+@media (max-width:650px) {
+    .under-carousel-cont,
+    .logo-cont  { 
+        grid-template-columns: repeat(3,1fr);
+}
+
+
+}

@@ -1,0 +1,293 @@
+.prvi-div {
+    width: 100%;
+    height: 50px;
+    background: orange;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    font-weight: 600;
+    
+    #text1 {
+        transition-delay: 150ms;
+        opacity: 1;
+    }
+     #text2 {
+      opacity: 0;
+    }
+    span {
+        transition: opacity 0.3s ease-in-out;
+    }
+}
+
+.under-carousel-cont{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: 700;
+    img {
+     max-width: 100% ;
+     min-height: 100px;
+     object-fit: cover;
+     border-radius: 20px;
+     
+     &:hover {
+         opacity: 0.8;
+         transition: 200ms ease-in-out;
+     }
+    }
+    
+    article {
+        display: flex;
+        flex-direction: column; 
+    }
+    }
+
+.special-prices-cont{
+    margin-top: 2rem;
+    overflow-x: auto;
+    
+    // scrollbar-width: none;
+    .special-prices-card_div {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: repeat(7,1fr) ;
+        gap: 10px;
+        scroll-snap-type:proximity;
+        
+    }
+    article {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button {
+            margin-right: 2rem;
+            font-size: 2.4rem;
+            padding: 5px 0px;
+            background: none;
+            border: none;
+            color: $colorMain;
+            display: none;
+        }
+    }
+    .card-img {
+        box-shadow: 0px 0px 15px -2px rgb(0 0 0 / 15%);
+        border-radius: 10px !important;
+        padding: 30px 10px;
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800; 
+        }
+        img {
+            min-width: 100px;
+            height: 140px;
+        }  
+        .card-img_old-price {
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+            padding: 10px 10px ;
+            span {
+                text-decoration: line-through;
+            }
+            p {
+               padding-left: 10px;
+                color: red;
+            }
+        }
+        
+        .card-img_new-price {
+           padding: 5px 20px;
+           background-color: red;
+           color: white;
+           
+        }
+        .card-img_company-name {
+            padding-top: 10px;
+        }
+        .card-img_description {
+            padding-top: 10px;
+            font-weight: 500;
+            text-align: center;
+    }
+  }
+}
+
+.popular-categories-section {
+    margin: 3rem 0 0 0;
+    font-weight: 900;
+    
+    h2 {
+        margin-bottom: 1rem;
+
+    }
+.popular-categories-cont {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+    text-align: center;
+    overflow:auto ;
+    article {
+        min-width: 200px;
+    }
+    img  {
+        min-height: 300px;
+        width: 100% ;
+     object-fit: cover;
+     border-radius: 3px;
+     
+     &:hover {
+         opacity: 0.8;
+         transition: 200ms ease-in-out;
+     }
+    }
+    
+ 
+    }
+}
+
+.logo-cont {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+    margin-top: 4rem;
+    text-align: center;
+   
+    article {
+        outline: 1px solid black;
+       
+        border-radius: 10px;
+        &:hover {
+            box-shadow: 8px 7px 5px -1px rgba(0,0,0,0.5);
+-webkit-box-shadow: 8px 7px 5px -1px rgba(0,0,0,0.5);
+-moz-box-shadow: 8px 7px 5px -1px rgba(0,0,0,0.5);
+            transition: 200ms ease-in-out;
+        }
+    }
+    img  {
+     width: 100% ;
+    //  min-height: 100px;
+     object-fit: cover;
+     border-radius: 20px;
+     
+    }
+
+}
+
+.recommend-cont{
+    margin-top: 4rem;
+    overflow-x: auto;
+     h2 {
+        font-weight:bolder;
+     }
+ 
+    .recommend-prices-card_div {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: repeat(6,1fr) ;
+        gap: 10px;
+        scroll-snap-type:proximity;
+         text-align: center;
+    }
+    
+    .card-img {
+        box-shadow: 0px 0px 15px -2px rgb(0 0 0 / 15%);
+        border-radius: 10px !important;
+        padding: 30px 10px;
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900; 
+        }
+        img {
+            min-width: 150px;
+            height: 140px;
+        }  
+        
+        .recommend-img_price {
+            margin: 30px 0 10px 0;
+           padding: 2px 40px;
+           background-color: yellow;
+           color: black;
+           
+        }
+     
+        .recommend-img_description {
+            
+        font-weight: 500;
+           
+    }
+  }
+}
+
+
+
+.fun-cont{
+    margin-top: 4rem;
+    overflow: hidden;
+    display:flex;
+
+     h2 {
+        font-weight:bolder;
+     }
+ 
+     .fun_right-div-cont {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+
+        .card-img {
+        box-shadow: 0px 0px 15px -2px rgb(0 0 0 / 15%);
+        border-radius: 10px !important;
+        padding: 30px 10px;
+        
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900; 
+        }
+        img {
+            min-width: 150px;
+            height: 140px;
+            object-fit:cover;
+        }  
+        
+        .fun-img_price {
+            margin: 30px 0 10px 0;
+           padding: 2px 40px;
+           background-color: yellow;
+           color: black;
+           
+        }
+     
+        .fun-img_description {
+            
+        font-weight: 500;
+           
+    }
+      }
+     }
+     
+     .fun_left-div-cont {
+        
+        img {
+            object-fit: cover;
+            background-size: cover;
+             background-position: center;
+             height: 100%;
+            width: 100%;
+        }
+     }
+    
+}
+
+
